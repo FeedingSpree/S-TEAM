@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-TEAM | Issy & Co Cosmetics</title>
+ <link rel="stylesheet" href="shopstyle.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+
+    <header class="header">
+          <div class="header-top" data-header>
+            <div class="container">
+                <button class="nav-open-btn" aria-label="open menu"
+                    data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+                <a href="index.html" class="logo">
+                    <img src="images/s-team.png" width="179" height="26"
+                        alt="S-TEAM" />
+                </a>
+                <div class="header-actions">
+                    <div class="input-wrapper">
+                        <input
+                            type="search"
+                            name="search"
+                            placeholder="Search product"
+                            class="search-field" />
+                        <button class="search-submit" aria-label="search" style="color: #D14D72;">
+                            <ion-icon name="search-outline"
+                                aria-hidden="true"></ion-icon>
+                        </button>
+                    </div>
+                    <a href="custprofile.html">
+                    <button class="header-action-btn" aria-label="user">
+                        <ion-icon 
+                            name="person-outline"
+                            aria-hidden="true"
+                            aria-hidden="true"></ion-icon>
+                    </button>
+                    </a>
+                    <a href="SHOPPINGCART.html">
+                    <button class="header-action-btn"
+                        aria-label="cart item">
+                        <ion-icon
+                            name="bag-handle-outline"
+                            aria-hidden="true"
+                            aria-hidden="true"></ion-icon>
+                    </button>
+                    </a>
+                </div>
+
+                <nav class="navbar" style="background-color: #FFD1D1;">
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="shop-blk.html"
+                                class="navbar-link has-after">BLK</a>
+                        </li>
+                        <li>
+                            <a href="shop-careline.html"
+                                class="navbar-link has-after">CARELINE</a>
+                        </li>
+                        <li>
+                            <a href="shop-grwm.html"
+                                class="navbar-link has-after">GRWM</a>
+                        </li>
+                        <li>
+                            <a href="shop-issy.html"
+                                class="navbar-link has-after">ISSY</a>
+                        </li>
+                        <li>
+                            <a href="shop-vice.html"
+                                class="navbar-link has-after">VICE</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <div class="mobile-navbar" data-navbar>
+            <div class="wrapper">
+            </div>
+            <ul class="navbar-list">
+                <li>
+                    <a href="shop.html" class="navbar-link"
+                        data-nav-link>PRODUCTS</a>
+                </li>
+                <li>
+                    <a href="categories.html" class="navbar-link"
+                        data-nav-link>CATEGORIES</a>
+                </li>
+                <li>
+                    <a href="BLUSH" class="navbar-link"
+                        data-nav-link>BLUSH</a>
+                </li>
+                <li>
+                    <a href="#LIPS" class="navbar-link"
+                        data-nav-link>LIPS</a>
+                </li>
+                <li>
+                    <a href="#BASE" class="navbar-link"
+                        data-nav-link>BASE</a>
+                </li>
+                <li>
+                    <a href="#POWDER" class="navbar-link"
+                        data-nav-link>POWDER</a>
+                </li>
+                <li>
+                    <a href="#CONTOUR" class="navbar-link"
+                        data-nav-link>CONTOUR</a>
+                </li>
+                <li>
+                    <a href="#EYES" class="navbar-link"
+                        data-nav-link>EYES</a>
+                </li>
+                <li>
+                    <a href="#ABOUT" class="navbar-link"
+                        data-nav-link>ABOUT</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+
+    <div class="banner">
+        <img src="brand_logo/banner-issy.jpg" alt="Banner" class="banner-image">
+    </div>
+
+    <p id="allProducts"></p>
+    <!-- <p id="navEme">HOME / PRODUCT</p> -->
+
+    <p id="navEme">
+        <a href="index.html" class="nav-link">HOME &nbsp;&nbsp;</a>  /  
+        <a href="categories.html" class="nav-link">&nbsp;&nbsp; CATEGORIES &nbsp;&nbsp;</a>  /
+        &nbsp;&nbsp; Issy & Co Cosmetics
+    </p>
+
+
+    <div id="product-list">
+        <div class="product" onclick="showProductDetails('product1')">
+            <img src="product_pics/blk-sample.png" alt="sample" class="image-1">
+            <img src="product_pics/blk-2.png" alt="sample" class="image-2">
+            <p class="prodTitle">Daydream airy matte perfecting powder foundation SPF 20</p>
+            <p class="prodPrice">&#8369; 449.00</p>
+        </div>
+
+        <div class="product" onclick="showProductDetails('product2')">
+            <img src="product_pics/blk-gloss-gel.png" alt="sample" class="image-1">
+            <img src="product_pics/blk-gloss-gel-2.jpg" alt="sample" class="image-2">
+            <p class="prodTitle">BLK Cosmetics gloss gel tint</p>
+            <p class="prodPrice">&#8369; 249.00</p>
+        </div>
+
+    
+        <div class="product" onclick="showProductDetails('product3')">
+            <img src="product_pics/blk-eyeshadow.png" alt="sample" class="image-1">
+            <img src="product_pics/blk-eyeshadow-2.jpg" alt="sample" class="image-2">
+            <p class="prodTitle">BLK Cosmetics eyeshadow palette</p>
+            <p class="prodPrice">&#8369; 499.00</p>
+        </div>
+
+        <div class="product" onclick="showProductDetails('product3')">
+            <img src="product_pics/blk-eyeshadow.png" alt="sample" class="image-1">
+            <img src="product_pics/blk-eyeshadow-2.jpg" alt="sample" class="image-2">
+            <p class="prodTitle">BLK Cosmetics eyeshadow palette</p>
+            <p class="prodPrice">&#8369; 499.00</p>
+        </div>
+
+
+    </div>
+    
+    <table>
+        <tr>
+            <td>
+                <div id="back-button" onclick="goBack()" style="display:none;">&#10094;</div>
+            </td>
+
+            <td>
+                <div id="navEme-products">
+                    <!-- <p id="home-nav" style="display: none;">HOME /</p> 
+                    <p id="products-nav" onclick="goBack()" style="display: none;">PRODUCTS / </p> -->
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+    
+    <div id="product-details">
+        <table>
+            <tr>
+                <td rowspan="5">
+                    <div class="slideshow-container">
+                    <img id="product-image" src="" alt="sample">
+                    <div class="prev" onclick="changeSlide(-1)">&#10094;</div>
+                    <div class="next" onclick="changeSlide(1)">&#10095;</div>
+                    </div>
+
+                    <div class="thumbnails">
+                        <img class="thumbnail" id="thumbnail-1" src="" onclick="currentSlide(1)" alt="Thumbnail 1">
+                        <img class="thumbnail" id="thumbnail-2" src="" onclick="currentSlide(2)" alt="Thumbnail 2">
+                        <img class="thumbnail" id="thumbnail-3" src="" onclick="currentSlide(3)" alt="Thumbnail 3">
+                        <img class="thumbnail" id="thumbnail-4" src="" onclick="currentSlide(4)" alt="Thumbnail 4">
+                    </div>
+                </td>
+
+                <td>
+                    <p id="prodTitle-details"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p id="prodPrice-details"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="shade-picker"></div> <!-- Shade picker will be filled dynamically -->
+                    <p id="selected-shade"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p id="prodDesc-details"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button id="addToCart">Add To Cart</button>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+
+
+    <script src="shop-issy.js">
+ 
+    </script>
+
+<footer class="footer" data-section>
+    <div class="container" style="margin-bottom: 40px;">
+        <div class="footer-top">
+            <ul class="footer-list">
+                <li>
+                    <img src="images/s-team.png" id="footer-logo">
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">BRANDS</p>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">BLK</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">CARELINE</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">ISSY</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">GRWM</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">VICE</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">CATEGORIES</p>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">BASE</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">EYES</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">LIPS</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">BLUSH & CONTOUR</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">POWDERS</a>
+                </li>
+            </ul>
+
+            <div class="footer-list">
+                <p class="newsletter-title">Get ready with us!</p>
+                <ul class="social-list">
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-tiktok"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+                <p class="newsletter-text">
+                    Be the first to know about our new collections & launches!
+                </p>
+
+                <form action class="newsletter-form">
+                    <input
+                        type="email"
+                        name="email_address"
+                        placeholder="Enter your email address"
+                        required
+                        class="email-field"/>
+                    <button type="submit"
+                        class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <ul class="surname-list">
+            <li>Sobrevega</li>
+            <li>Tomagan</li>
+            <li>Estrella</li>
+            <li>Alconcel</li>
+            <li>Mariano</li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+                <p class="copyright">&copy; 2024, All Rights Reserved.</p>
+            </div>
+    </div>
+</footer>
+
+<a
+href="#top"
+class="back-top-btn"
+aria-label="back to top"
+data-back-top-btn>
+<ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+</a>
+
+<script src="js/script.js" defer></script>
+
+<script
+type="module"
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script
+nomodule
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
